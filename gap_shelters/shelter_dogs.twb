@@ -1,0 +1,2249 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1227.1336                               -->
+<workbook original-version='18.1' source-build='2023.3.1 (20233.23.1227.1336)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column alias='2023' caption='Selected Year' datatype='integer' default-format='*' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='2023'>
+        <calculation class='tableau' formula='2023' />
+        <aliases>
+          <alias key='2020' value='2020' />
+          <alias key='2021' value='2021' />
+          <alias key='2022' value='2022' />
+          <alias key='2023' value='2023' />
+        </aliases>
+        <members>
+          <member alias='2020' value='2020' />
+          <member alias='2021' value='2021' />
+          <member alias='2022' value='2022' />
+          <member alias='2023' value='2023' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='shelter_dog' inline='true' name='federated.0q0jwnh1er8rwy1bn50m70p91iys' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='shelter_dog' name='textscan.111um9i1h8fuhl19dutha0zbu96h'>
+            <connection class='textscan' directory='C:/Users/yuexin/Desktop/SI649/nar_proj' filename='shelter_dog.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.111um9i1h8fuhl19dutha0zbu96h' name='shelter_dog.csv' table='[shelter_dog#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='entry_type' ordinal='1' />
+            <column datatype='real' name='entry_count(million)' ordinal='2' />
+            <column datatype='string' name='outcome_type' ordinal='3' />
+            <column datatype='real' name='outcome_count(million)' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.111um9i1h8fuhl19dutha0zbu96h' name='shelter_dog.csv' table='[shelter_dog#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='entry_type' ordinal='1' />
+            <column datatype='real' name='entry_count(million)' ordinal='2' />
+            <column datatype='string' name='outcome_type' ordinal='3' />
+            <column datatype='real' name='outcome_count(million)' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[shelter_dog.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[shelter_dog.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shelter_dog.csv_2CAE722E2D534FDFB43697DD79A7CFCC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>entry_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[entry_type]</local-name>
+            <parent-name>[shelter_dog.csv]</parent-name>
+            <remote-alias>entry_type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shelter_dog.csv_2CAE722E2D534FDFB43697DD79A7CFCC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>entry_count(million)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[entry_count(million)]</local-name>
+            <parent-name>[shelter_dog.csv]</parent-name>
+            <remote-alias>entry_count(million)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shelter_dog.csv_2CAE722E2D534FDFB43697DD79A7CFCC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>outcome_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[outcome_type]</local-name>
+            <parent-name>[shelter_dog.csv]</parent-name>
+            <remote-alias>outcome_type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shelter_dog.csv_2CAE722E2D534FDFB43697DD79A7CFCC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>outcome_count(million)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[outcome_count(million)]</local-name>
+            <parent-name>[shelter_dog.csv]</parent-name>
+            <remote-alias>outcome_count(million)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shelter_dog.csv_2CAE722E2D534FDFB43697DD79A7CFCC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='total_entries(million)' datatype='real' name='[Calculation_1268326257030610944]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([entry_count(million)])' />
+      </column>
+      <column caption='total_adoptions(million)' datatype='real' name='[Calculation_1268326257030840321]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum(IF [outcome_type] = &quot;adopted&quot; THEN [outcome_count(million)] ELSE 0 END)' />
+      </column>
+      <column caption='difference' datatype='real' name='[Calculation_1268326257033940994]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1268326257030610944]-[Calculation_1268326257030840321]' />
+      </column>
+      <column caption='selected_year_pie' datatype='boolean' name='[Calculation_473722398093451264]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[year] = [Parameters].[Parameter 1]' />
+      </column>
+      <column aggregation='Sum' caption='selected_year_highlight' datatype='integer' name='[Calculation_473722398095478785]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='IF [year] = [Parameters].[Parameter 1] THEN [year] ELSE NULL END' />
+      </column>
+      <column caption='shade_start' datatype='real' name='[Calculation_473722398109564931]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Calculation_1268326257030840321] &lt;= [Calculation_1268326257030610944] THEN [Calculation_1268326257030840321] ELSE [Calculation_1268326257030610944] END' />
+      </column>
+      <column caption='shade_end' datatype='real' name='[Calculation_473722398109773828]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Calculation_1268326257030840321] &gt;= [Calculation_1268326257030610944] THEN [Calculation_1268326257030840321] ELSE [Calculation_1268326257030610944] END' />
+      </column>
+      <column caption=' Year Match' datatype='boolean' name='[Calculation_473722398123343879]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[year] = [Parameters].[Parameter 1]' />
+      </column>
+      <column caption='non-live_count' datatype='string' name='[Calculation_473722398127874056]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [year] = [Parameters].[Parameter 1] AND [outcome_type] = &quot;non-live&quot; THEN STR(INT([outcome_count(million)])) + &quot;.&quot; +&#13;&#10;    RIGHT(&quot;0&quot; + STR(INT(([outcome_count(million)] - INT([outcome_count(million)])) * 100)), 2) ELSE &quot;&quot; END' />
+      </column>
+      <column caption='live_count' datatype='string' name='[Calculation_473722398130561033]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [year] = [Parameters].[Parameter 1] AND [outcome_type] = &quot;live&quot; THEN STR(INT([outcome_count(million)])) + &quot;.&quot; +&#13;&#10;    RIGHT(&quot;0&quot; + STR(INT(([outcome_count(million)] - INT([outcome_count(million)])) * 100)), 2) ELSE &quot;&quot; END' />
+      </column>
+      <column caption='stray_count' datatype='string' name='[Calculation_473722398132949002]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [year] = [Parameters].[Parameter 1] AND [entry_type] = &quot;stray&quot; THEN STR(INT([entry_count(million)])) + &quot;.&quot; +&#13;&#10;    RIGHT(&quot;0&quot; + STR(INT(([entry_count(million)] - INT([entry_count(million)])) * 100)), 2) ELSE &quot;&quot; END' />
+      </column>
+      <column caption='relinquished_count' datatype='string' name='[Calculation_473722398133239819]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [year] = [Parameters].[Parameter 1] AND [entry_type] = &quot;relinquished&quot; THEN STR(INT([entry_count(million)])) + &quot;.&quot; +&#13;&#10;    RIGHT(&quot;0&quot; + STR(INT(([entry_count(million)] - INT([entry_count(million)])) * 100)), 2) ELSE &quot;&quot; END' />
+      </column>
+      <column caption='other_count' datatype='string' name='[Calculation_473722398133387276]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [year] = [Parameters].[Parameter 1] AND [entry_type] = &quot;other&quot; THEN STR(INT([entry_count(million)])) + &quot;.&quot; +&#13;&#10;    RIGHT(&quot;0&quot; + STR(INT(([entry_count(million)] - INT([entry_count(million)])) * 100)), 2) ELSE &quot;&quot; END' />
+      </column>
+      <column caption='adoption_selected' datatype='real' name='[Calculation_473722398136627214]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [year] = [Parameters].[Parameter 1] AND [outcome_type] = &quot;adopted&quot; THEN &#13;&#10;    [outcome_count(million)] &#13;&#10;ELSE &#13;&#10;    0 &#13;&#10;END' />
+      </column>
+      <column caption='gap' datatype='real' name='[Calculation_473722398136774671]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF attr([year]) = [Parameters].[Parameter 1] THEN (sum([Calculation_473722398137233424]) - sum([Calculation_473722398136627214])) END' />
+      </column>
+      <column caption='entry_selected' datatype='real' name='[Calculation_473722398137233424]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [year] = [Parameters].[Parameter 1] THEN [entry_count(million)] ELSE 0 END' />
+      </column>
+      <column caption='year_annotation' datatype='string' name='[Calculation_652740483332534272]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR([Parameters].[Parameter 1])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='shelter_dog.csv' datatype='table' name='[__tableau_internal_object_id__].[shelter_dog.csv_2CAE722E2D534FDFB43697DD79A7CFCC]' role='measure' type='quantitative' />
+      <column caption='Entry Count(Million)' datatype='real' name='[entry_count(million)]' role='measure' type='quantitative' />
+      <column caption='Entry Type' datatype='string' name='[entry_type]' role='dimension' type='nominal' />
+      <column caption='Outcome Count(Million)' datatype='real' name='[outcome_count(million)]' role='measure' type='quantitative' />
+      <column caption='Outcome Type' datatype='string' name='[outcome_type]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[Calculation_1268326257030610944]' derivation='User' name='[diff:usr:Calculation_1268326257030610944:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[entry_type]' derivation='None' name='[none:entry_type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[outcome_type]' derivation='None' name='[none:outcome_type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1268326257030610944]' derivation='User' name='[pcto:usr:Calculation_1268326257030610944:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='CellInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Calculation_1268326257030610944]' derivation='User' name='[pcto:usr:Calculation_1268326257030610944:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Calculation_1268326257030610944]' derivation='User' name='[usr:Calculation_1268326257030610944:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1268326257030840321]' derivation='User' name='[usr:Calculation_1268326257030840321:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1268326257033940994]' derivation='User' name='[usr:Calculation_1268326257033940994:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_473722398109564931]' derivation='User' name='[usr:Calculation_473722398109564931:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_473722398109773828]' derivation='User' name='[usr:Calculation_473722398109773828:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='0.907104' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.0928962' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:entry_type:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;stray&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;relinquished&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;other&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:outcome_type:nk]' palette='blue_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;adopted&quot;</bucket>
+            </map>
+            <map to='#4e7fac'>
+              <bucket>&quot;live&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;non-live&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030840321:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_473722398109773828:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_473722398109564931:qk]&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030610944:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257033940994:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0q0jwnh1er8rwy1bn50m70p91iys].[diff:usr:Calculation_1268326257030610944:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0q0jwnh1er8rwy1bn50m70p91iys].[pcto:usr:Calculation_1268326257030610944:qk:2]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0q0jwnh1er8rwy1bn50m70p91iys].[pcto:usr:Calculation_1268326257030610944:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;China&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column alias='2023' caption='Selected Year' datatype='integer' default-format='*' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='2023'>
+          <calculation class='tableau' formula='2023' />
+          <aliases>
+            <alias key='2020' value='2020' />
+            <alias key='2021' value='2021' />
+            <alias key='2022' value='2022' />
+            <alias key='2023' value='2023' />
+          </aliases>
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='shelter_dog.csv' id='shelter_dog.csv_2CAE722E2D534FDFB43697DD79A7CFCC'>
+            <properties context=''>
+              <relation connection='textscan.111um9i1h8fuhl19dutha0zbu96h' name='shelter_dog.csv' table='[shelter_dog#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='string' name='entry_type' ordinal='1' />
+                  <column datatype='real' name='entry_count(million)' ordinal='2' />
+                  <column datatype='string' name='outcome_type' ordinal='3' />
+                  <column datatype='real' name='outcome_count(million)' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions brushing-enabled='false'>
+    <action caption='Highlight 1 (generated)' name='[Action1_2E38181A73C04E31B386C1054A15DBA0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Number of dogs entering the shelters and dogs adopted from the shelters in U.S. from 2020 to 2023' />
+      <command command='tsc:brush'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Number of dogs entering the shelters and dogs adopted from the shelters in U.S. from 2020 to 2023' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Distribution of dog entry type in the selected year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='shelter_dog' name='federated.0q0jwnh1er8rwy1bn50m70p91iys' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column alias='2023' caption='Selected Year' datatype='integer' default-format='*' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='2023'>
+              <calculation class='tableau' formula='2023' />
+              <aliases>
+                <alias key='2020' value='2020' />
+                <alias key='2021' value='2021' />
+                <alias key='2022' value='2022' />
+                <alias key='2023' value='2023' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0q0jwnh1er8rwy1bn50m70p91iys'>
+            <column caption='selected_year_pie' datatype='boolean' name='[Calculation_473722398093451264]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[year] = [Parameters].[Parameter 1]' />
+            </column>
+            <column caption='Entry Count(Million)' datatype='real' name='[entry_count(million)]' role='measure' type='quantitative' />
+            <column caption='Entry Type' datatype='string' name='[entry_type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_473722398093451264]' derivation='None' name='[none:Calculation_473722398093451264:nk]' pivot='key' type='nominal' />
+            <column-instance column='[entry_type]' derivation='None' name='[none:entry_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[entry_count(million)]' derivation='Sum' name='[sum:entry_count(million):qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398093451264:nk]'>
+            <groupfilter function='member' level='[none:Calculation_473722398093451264:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398093451264:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:entry_type:nk]' />
+              <wedge-size column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[sum:entry_count(million):qk]' />
+              <text column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:entry_type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9230387210845947' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:entry_type:nk]</field>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[sum:entry_count(million):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;other&quot;</value>
+                <value>0.38200000000000001</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.5' y='-14' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:entry_type:nk]</field>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[sum:entry_count(million):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;relinquished&quot;</value>
+                <value>0.94799999999999995</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-49' y='-14' />
+          </mark-label>
+          <mark-label id='2'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:entry_type:nk]</field>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[sum:entry_count(million):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;stray&quot;</value>
+                <value>1.8700000000000001</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='28' y='32' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{7A4EA165-08FD-4FE9-A662-FCB3D0DB48D9}' />
+    </worksheet>
+    <worksheet name='Distribution of dog entry type over years'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='shelter_dog' name='federated.0q0jwnh1er8rwy1bn50m70p91iys' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column alias='2023' caption='Selected Year' datatype='integer' default-format='*' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='2023'>
+              <calculation class='tableau' formula='2023' />
+              <aliases>
+                <alias key='2020' value='2020' />
+                <alias key='2021' value='2021' />
+                <alias key='2022' value='2022' />
+                <alias key='2023' value='2023' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0q0jwnh1er8rwy1bn50m70p91iys'>
+            <column caption='total_entries(million)' datatype='real' name='[Calculation_1268326257030610944]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([entry_count(million)])' />
+            </column>
+            <column caption='stray_count' datatype='string' name='[Calculation_473722398132949002]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [year] = [Parameters].[Parameter 1] AND [entry_type] = &quot;stray&quot; THEN STR(INT([entry_count(million)])) + &quot;.&quot; +&#13;&#10;    RIGHT(&quot;0&quot; + STR(INT(([entry_count(million)] - INT([entry_count(million)])) * 100)), 2) ELSE &quot;&quot; END' />
+            </column>
+            <column caption='relinquished_count' datatype='string' name='[Calculation_473722398133239819]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [year] = [Parameters].[Parameter 1] AND [entry_type] = &quot;relinquished&quot; THEN STR(INT([entry_count(million)])) + &quot;.&quot; +&#13;&#10;    RIGHT(&quot;0&quot; + STR(INT(([entry_count(million)] - INT([entry_count(million)])) * 100)), 2) ELSE &quot;&quot; END' />
+            </column>
+            <column caption='other_count' datatype='string' name='[Calculation_473722398133387276]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [year] = [Parameters].[Parameter 1] AND [entry_type] = &quot;other&quot; THEN STR(INT([entry_count(million)])) + &quot;.&quot; +&#13;&#10;    RIGHT(&quot;0&quot; + STR(INT(([entry_count(million)] - INT([entry_count(million)])) * 100)), 2) ELSE &quot;&quot; END' />
+            </column>
+            <column caption='Entry Count(Million)' datatype='real' name='[entry_count(million)]' role='measure' type='quantitative' />
+            <column caption='Entry Type' datatype='string' name='[entry_type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_473722398132949002]' derivation='None' name='[none:Calculation_473722398132949002:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_473722398133239819]' derivation='None' name='[none:Calculation_473722398133239819:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_473722398133387276]' derivation='None' name='[none:Calculation_473722398133387276:nk]' pivot='key' type='nominal' />
+            <column-instance column='[entry_type]' derivation='None' name='[none:entry_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1268326257030610944]' derivation='User' name='[pcto:usr:Calculation_1268326257030610944:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='CellInPane' type='PctTotal' />
+            </column-instance>
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[pcto:usr:Calculation_1268326257030610944:qk:2]' scope='rows' value='' />
+            <format attr='width' field='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[pcto:usr:Calculation_1268326257030610944:qk:2]' value='64' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:entry_type:nk]' />
+              <text column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398132949002:nk]' />
+              <text column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398133239819:nk]' />
+              <text column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398133387276:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398133387276:nk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398132949002:nk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398133239819:nk]</run>
+                <run>&gt;&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[pcto:usr:Calculation_1268326257030610944:qk:2]</rows>
+        <cols>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:year:qk]</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:year:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[pcto:usr:Calculation_1268326257030610944:qk:2]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398132949002:nk]</field>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398133239819:nk]</field>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398133387276:nk]</field>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:entry_type:nk]</field>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:year:qk]</field>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[pcto:usr:Calculation_1268326257030610944:qk:2]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;&quot;</value>
+                <value>&quot;&quot;</value>
+                <value>&quot;0.38&quot;</value>
+                <value>&quot;other&quot;</value>
+                <value>2023</value>
+                <value>0.119375</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.55' y='-13' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{330F8783-15CB-493C-A84E-9D51E6EECE1D}' />
+    </worksheet>
+    <worksheet name='Distribution of dog outcome type in the selected year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='shelter_dog' name='federated.0q0jwnh1er8rwy1bn50m70p91iys' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column alias='2023' caption='Selected Year' datatype='integer' default-format='*' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='2023'>
+              <calculation class='tableau' formula='2023' />
+              <aliases>
+                <alias key='2020' value='2020' />
+                <alias key='2021' value='2021' />
+                <alias key='2022' value='2022' />
+                <alias key='2023' value='2023' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0q0jwnh1er8rwy1bn50m70p91iys'>
+            <column caption='selected_year_pie' datatype='boolean' name='[Calculation_473722398093451264]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[year] = [Parameters].[Parameter 1]' />
+            </column>
+            <column-instance column='[Calculation_473722398093451264]' derivation='None' name='[none:Calculation_473722398093451264:nk]' pivot='key' type='nominal' />
+            <column-instance column='[outcome_type]' derivation='None' name='[none:outcome_type:nk]' pivot='key' type='nominal' />
+            <column caption='Outcome Count(Million)' datatype='real' name='[outcome_count(million)]' role='measure' type='quantitative' />
+            <column caption='Outcome Type' datatype='string' name='[outcome_type]' role='dimension' type='nominal' />
+            <column-instance column='[outcome_count(million)]' derivation='Sum' name='[sum:outcome_count(million):qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398093451264:nk]'>
+            <groupfilter function='member' level='[none:Calculation_473722398093451264:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:outcome_type:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:outcome_type:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:outcome_type:nk]' member='&quot;adopted&quot;' />
+                <groupfilter function='member' level='[none:outcome_type:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:outcome_type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;non-live&quot;</bucket>
+              <bucket>&quot;live&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:outcome_type:nk]</column>
+            <column>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398093451264:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='162' />
+            <format attr='height' value='166' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:outcome_type:nk]' />
+              <wedge-size column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[sum:outcome_count(million):qk]' />
+              <text column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:outcome_type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8350828886032104' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:outcome_type:nk]</field>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[sum:outcome_count(million):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;live&quot;</value>
+                <value>3.5</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='14' y='14' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:outcome_type:nk]</field>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[sum:outcome_count(million):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;non-live&quot;</value>
+                <value>0.40100000000000002</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.5' y='-10' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{37401C27-A891-4303-95E4-52F8C8253107}' />
+    </worksheet>
+    <worksheet name='Distribution of dog outcome type over years'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='shelter_dog' name='federated.0q0jwnh1er8rwy1bn50m70p91iys' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column alias='2023' caption='Selected Year' datatype='integer' default-format='*' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='2023'>
+              <calculation class='tableau' formula='2023' />
+              <aliases>
+                <alias key='2020' value='2020' />
+                <alias key='2021' value='2021' />
+                <alias key='2022' value='2022' />
+                <alias key='2023' value='2023' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0q0jwnh1er8rwy1bn50m70p91iys'>
+            <column caption='non-live_count' datatype='string' name='[Calculation_473722398127874056]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [year] = [Parameters].[Parameter 1] AND [outcome_type] = &quot;non-live&quot; THEN STR(INT([outcome_count(million)])) + &quot;.&quot; +&#13;&#10;    RIGHT(&quot;0&quot; + STR(INT(([outcome_count(million)] - INT([outcome_count(million)])) * 100)), 2) ELSE &quot;&quot; END' />
+            </column>
+            <column caption='live_count' datatype='string' name='[Calculation_473722398130561033]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [year] = [Parameters].[Parameter 1] AND [outcome_type] = &quot;live&quot; THEN STR(INT([outcome_count(million)])) + &quot;.&quot; +&#13;&#10;    RIGHT(&quot;0&quot; + STR(INT(([outcome_count(million)] - INT([outcome_count(million)])) * 100)), 2) ELSE &quot;&quot; END' />
+            </column>
+            <column-instance column='[Calculation_473722398127874056]' derivation='None' name='[none:Calculation_473722398127874056:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_473722398130561033]' derivation='None' name='[none:Calculation_473722398130561033:nk]' pivot='key' type='nominal' />
+            <column-instance column='[outcome_type]' derivation='None' name='[none:outcome_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Outcome Count(Million)' datatype='real' name='[outcome_count(million)]' role='measure' type='quantitative' />
+            <column caption='Outcome Type' datatype='string' name='[outcome_type]' role='dimension' type='nominal' />
+            <column-instance column='[outcome_count(million)]' derivation='Sum' name='[pcto:sum:outcome_count(million):qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='CellInPane' type='PctTotal' />
+            </column-instance>
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:outcome_type:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:outcome_type:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:outcome_type:nk]' member='&quot;adopted&quot;' />
+                <groupfilter function='member' level='[none:outcome_type:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:outcome_type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;non-live&quot;</bucket>
+              <bucket>&quot;live&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:outcome_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[pcto:sum:outcome_count(million):qk:2]' scope='rows' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:outcome_type:nk]' />
+              <text column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398127874056:nk]' />
+              <text column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398130561033:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run><![CDATA[<[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398127874056:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run><![CDATA[<[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398130561033:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[pcto:sum:outcome_count(million):qk:2]</rows>
+        <cols>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{FA0D7C69-D566-4BF7-BCF5-B0A26666DE3D}' />
+    </worksheet>
+    <worksheet name='Number of dogs entering the shelters and dogs adopted from the shelters in U.S. from 2020 to 2023'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='shelter_dog' name='federated.0q0jwnh1er8rwy1bn50m70p91iys' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column alias='2023' caption='Selected Year' datatype='integer' default-format='*' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='2023'>
+              <calculation class='tableau' formula='2023' />
+              <aliases>
+                <alias key='2020' value='2020' />
+                <alias key='2021' value='2021' />
+                <alias key='2022' value='2022' />
+                <alias key='2023' value='2023' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0q0jwnh1er8rwy1bn50m70p91iys'>
+            <column caption='total_entries(million)' datatype='real' name='[Calculation_1268326257030610944]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([entry_count(million)])' />
+            </column>
+            <column caption='total_adoptions(million)' datatype='real' name='[Calculation_1268326257030840321]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum(IF [outcome_type] = &quot;adopted&quot; THEN [outcome_count(million)] ELSE 0 END)' />
+            </column>
+            <column aggregation='Sum' caption='selected_year_highlight' datatype='integer' name='[Calculation_473722398095478785]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='IF [year] = [Parameters].[Parameter 1] THEN [year] ELSE NULL END' />
+            </column>
+            <column caption='adoption_selected' datatype='real' name='[Calculation_473722398136627214]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [year] = [Parameters].[Parameter 1] AND [outcome_type] = &quot;adopted&quot; THEN &#13;&#10;    [outcome_count(million)] &#13;&#10;ELSE &#13;&#10;    0 &#13;&#10;END' />
+            </column>
+            <column caption='gap' datatype='real' name='[Calculation_473722398136774671]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF attr([year]) = [Parameters].[Parameter 1] THEN (sum([Calculation_473722398137233424]) - sum([Calculation_473722398136627214])) END' />
+            </column>
+            <column caption='entry_selected' datatype='real' name='[Calculation_473722398137233424]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [year] = [Parameters].[Parameter 1] THEN [entry_count(million)] ELSE 0 END' />
+            </column>
+            <column caption='year_annotation' datatype='string' name='[Calculation_652740483332534272]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR([Parameters].[Parameter 1])' />
+            </column>
+            <column-instance column='[Calculation_473722398095478785]' derivation='Attribute' name='[attr:Calculation_473722398095478785:qk]' pivot='key' type='quantitative' />
+            <column caption='Entry Count(Million)' datatype='real' name='[entry_count(million)]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_652740483332534272]' derivation='None' name='[none:Calculation_652740483332534272:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Outcome Count(Million)' datatype='real' name='[outcome_count(million)]' role='measure' type='quantitative' />
+            <column caption='Outcome Type' datatype='string' name='[outcome_type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_473722398136774671]' derivation='Sum' name='[sum:Calculation_473722398136774671:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1268326257030610944]' derivation='User' name='[usr:Calculation_1268326257030610944:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1268326257030840321]' derivation='User' name='[usr:Calculation_1268326257030840321:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_473722398136774671]' derivation='User' name='[usr:Calculation_473722398136774671:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030610944:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030840321:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030840321:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <encoding attr='space' class='0' field='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:year:qk]' field-type='quantitative' max='2023' min='2020' range-type='fixed' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030840321:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030610944:qk]' scope='rows' value='number of dogs(in million)' />
+            <encoding attr='space' class='0' field='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030610944:qk]' field-type='quantitative' max='3.3751124437781117' min='1.5' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='font-size' id='refline1' value='15' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='stroke-color' id='refline1' value='#5555558b' />
+            <format attr='line-visibility' id='refline1' value='on' />
+            <format attr='line-pattern-only' id='refline1' value='dashed' />
+            <format attr='background-color' id='refline1' value='#ffffff' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[:Measure Names]' />
+              <lod column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[attr:Calculation_473722398095478785:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:year:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='none' probability='95' scope='per-pane' value-column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[attr:Calculation_473722398095478785:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030610944:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[:Measure Names]' />
+              <lod column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[attr:Calculation_473722398095478785:qk]' />
+              <lod column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_473722398136774671:qk]' />
+              <lod column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_652740483332534272:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:year:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>total_entries(million):&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030610944:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030840321:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[:Measure Names]' />
+              <lod column='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[attr:Calculation_473722398095478785:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:year:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>total_adoptions(million):&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030840321:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030610944:qk] + [federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030840321:qk])</rows>
+        <cols>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:year:qk]</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:year:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030840321:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:year:qk]</field>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[sum:Calculation_473722398136774671:qk]</field>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030840321:qk]</field>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[attr:Calculation_473722398095478785:qk]</field>
+                  <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2022</value>
+                <value>1.0</value>
+                <value>2.1000000000000001</value>
+                <value>2022</value>
+                <value>&quot;[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030840321:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='7' y='228' />
+          </mark-label>
+        </mark-labels>
+        <annotations>
+          <annotation class='area' id='1' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run fontsize='9'>Gap between number of dogs entering the shelters and  leaving the shelters(adopted) in </run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontsize='9'><![CDATA[<[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_652740483332534272:nk]>]]></run>
+              <run fontsize='9'>:</run>
+              <run bold='true' fontsize='9'><![CDATA[ <[federated.0q0jwnh1er8rwy1bn50m70p91iys].[Calculation_473722398136774671]> million]]></run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2020.5744680851064'>
+                  <node-reference>
+                    <axis>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:year:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='2.7526684790384897'>
+                  <node-reference>
+                    <axis>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030610944:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2022.4304418985271'>
+                  <node-reference>
+                    <axis>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:year:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='2.2586035820264145'>
+                  <node-reference>
+                    <axis>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[usr:Calculation_1268326257030610944:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{DFDB87FE-47A2-49EB-AE1F-9A76429AE79C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='parameter-ctrl'>
+          <format attr='color' value='#000000' />
+          <format attr='font-size' value='12' />
+        </style-rule>
+        <style-rule element='parameter-ctrl-title'>
+          <format attr='text-align' value='center' />
+        </style-rule>
+      </style>
+      <size maxheight='1000' maxwidth='1400' minheight='1000' minwidth='1400' sizing-mode='fixed' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column alias='2023' caption='Selected Year' datatype='integer' default-format='*' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='2023'>
+          <calculation class='tableau' formula='2023' />
+          <aliases>
+            <alias key='2020' value='2020' />
+            <alias key='2021' value='2021' />
+            <alias key='2022' value='2022' />
+            <alias key='2023' value='2023' />
+          </aliases>
+          <members>
+            <member alias='2020' value='2020' />
+            <member alias='2021' value='2021' />
+            <member alias='2022' value='2022' />
+            <member alias='2023' value='2023' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='74245' id='18' name='Number of dogs entering the shelters and dogs adopted from the shelters in U.S. from 2020 to 2023' w='49429' x='571' y='800'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='10975' id='19' name='Number of dogs entering the shelters and dogs adopted from the shelters in U.S. from 2020 to 2023' pane-specification-id='1' param='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[:Measure Names]' type-v2='color' w='49429' x='571' y='75045'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='44165' id='23' name='Distribution of dog entry type over years' w='38000' x='50000' y='800'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='13180' id='25' param='horz' type-v2='layout-flow' w='98858' x='571' y='86020'>
+            <zone custom-title='true' h='13180' id='17' mode='slider' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='98858' x='571' y='86020'>
+              <formatted-text>
+                <run bold='true' fontsize='15'>Selected Year</run>
+                <run>Æ&#10;</run>
+                <run fontsize='10'>Select a year by dragging the slider to view the gap of entry/leave dogs in the shelters and the detailed data of number of dogs in each year</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='44200' id='24' name='Distribution of dog entry type over years' pane-specification-id='0' param='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:entry_type:nk]' type-v2='color' w='11429' x='88000' y='800'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='41055' id='26' name='Distribution of dog outcome type over years' w='38000' x='50000' y='44965'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='41020' id='27' name='Distribution of dog outcome type over years' pane-specification-id='0' param='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:outcome_type:nk]' type-v2='color' w='11429' x='88000' y='45000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98400' id='36' param='vert' type-v2='layout-flow' w='98858' x='571' y='800'>
+                <zone fixed-size='280' h='74245' id='18' is-fixed='true' name='Number of dogs entering the shelters and dogs adopted from the shelters in U.S. from 2020 to 2023' w='49429' x='571' y='800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10975' id='19' name='Number of dogs entering the shelters and dogs adopted from the shelters in U.S. from 2020 to 2023' pane-specification-id='1' param='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[:Measure Names]' type-v2='color' w='49429' x='571' y='75045'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44165' id='23' is-fixed='true' name='Distribution of dog entry type over years' w='38000' x='50000' y='800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='44200' id='24' name='Distribution of dog entry type over years' pane-specification-id='0' param='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:entry_type:nk]' type-v2='color' w='11429' x='88000' y='800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41055' id='26' is-fixed='true' name='Distribution of dog outcome type over years' w='38000' x='50000' y='44965'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='41020' id='27' name='Distribution of dog outcome type over years' pane-specification-id='0' param='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:outcome_type:nk]' type-v2='color' w='11429' x='88000' y='45000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone custom-title='true' h='13180' id='17' mode='slider' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='98858' x='571' y='86020'>
+                  <formatted-text>
+                    <run bold='true' fontsize='15'>Selected Year</run>
+                    <run>Æ&#10;</run>
+                    <run fontsize='10'>Select a year by dragging the slider to view the gap of entry/leave dogs in the shelters and the detailed data of number of dogs in each year</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DD2D6F21-415E-44B1-928D-D8C69BF4458E}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Number of dogs entering the shelters and dogs adopted from the shelters in U.S. from 2020 to 2023'>
+      <cards>
+        <edge name='left'>
+          <strip size='134'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card pane-specification-id='1' param='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[:Measure Names]</field>
+            <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398095478785:ok]</field>
+            <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{74A30CBD-A53C-4404-8A91-AF6356CEAC52}' />
+    </window>
+    <window class='worksheet' name='Distribution of dog entry type in the selected year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:entry_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398093451264:nk]</field>
+            <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:entry_type:nk]</field>
+            <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AE1DFE3E-A1EF-4B83-8AEE-C15674D58C37}' />
+    </window>
+    <window class='worksheet' name='Distribution of dog outcome type in the selected year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:outcome_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:Calculation_473722398093451264:nk]</field>
+            <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:outcome_type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FD608A45-0CA7-4B19-88F7-F1FDBFCFAD90}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Distribution of dog entry type over years'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Distribution of dog outcome type over years'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Number of dogs entering the shelters and dogs adopted from the shelters in U.S. from 2020 to 2023'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{67DAA82A-2A2A-4924-872E-141119EF7325}' />
+    </window>
+    <window class='worksheet' name='Distribution of dog entry type over years'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:entry_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:entry_type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{73B4AD17-B802-4FD2-9740-EF2B80CE3E5E}' />
+    </window>
+    <window class='worksheet' name='Distribution of dog outcome type over years'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0q0jwnh1er8rwy1bn50m70p91iys].[none:outcome_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D7BC13A0-E153-4B31-9249-EC418AE04DC2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      6spWWlZK6PkTe56/UxxYzAKenk4D0MvLG5OpfdvLsvey7PGX+McTTzMpJbm1l4SEWigtayQg
+      xo/GslIsoSF4dZofQMqCW5YAoKvKZvaip5k15YsTGJR2jF9QKH5Boa7fUZ7OcWhgyLE4Mk8v
+      p90fGX4sXzsTaN/vG9mTWUzy8BGMGDKIpqbOR+fDU1KoPFpO/7hBnDd8KCKRFPmfWu/j48vB
+      /TvZs28/FTUNpIxMofxoJYOShzJ0cCIdvGAB+PzD99ELSsaNn0i4rwyt/vj9PU8Ej/AEBirq
+      eP7199m/fx8vPfM8/ceMxZuW2aRVH2MCfvl2Le988DF79u3n9y3/o6zORFR4ILrashOecWol
+      MnE41rIDfPjVj+zctoUPPv2BCRPH96jdpYd28PNhDfNmTiC/ZcVTZa2GUROnUrx3M1+s/5mf
+      13/B5r3FTJ04qsf52+Lj68Nvv2xk//696C1yxo9P5pXlr7Fv316ef+kNJk5srzCr3n6dSbPm
+      4oGxzcouMTNnzuD1l55n7969PP/S68yYORNxZ/nN9Tz7zIts2bqDA/v38cmnXxEUGdnhi+lk
+      005k+8fGs3XXF2z/dRNRcYO5+/q5INQzYsixjWrjE4fg4yknNnkq/17WxDc/fOLsvVMAACAA
+      SURBVI1FkJIyfipSnNv3iRTOoXPKBZcwNSOPD1d/wHVLHmDq3JtoMon4+rOPkKp8mDrrMleZ
+      XspjTYmLi+H7n76nUW9l+nXLSIlvs7uZVOlqj6dPAAmxrRvIihnyp60EEStY/uY7vPfBh7z/
+      /gGiBw7hpX/eAoDNpCU19RDXAcNGjSP7q2/5aPVOPP2CeOz510kI96ahtITUg4dZ9KeH1voM
+      AOSePiQnxLap0o833nyFVR+sZX+zmWvveowZowZiaShleHLr11TK8BFDXG+f5OEptOk+mmYD
+      8RHefPDesdNbLrluCZdOGclbrz/P+x9+igklz7/+Fv38lRw83LP8bVl461JefWslH64t4KkX
+      xrL00Wf4YOUKVq9eQ+J541l8S/sduhVevuSlbSMvreWgDR/nyq4FS/6J7f2VrFmzhsThU1ly
+      24LO87/wCIkDQti8/huaDWb6xyXz1vL7e7RWobdwxwK5Oadxe4LdnNO4FcDNOY1bAdyc07gX
+      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
+      2K+zitG+AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='164' name='Distribution of dog entry type in the selected year' width='164'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Distribution of dog entry type over years' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='170' name='Distribution of dog outcome type in the selected year' width='166'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Distribution of dog outcome type over years' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Number of dogs entering the shelters and dogs adopted from the shelters in U.S. from 2020 to 2023' width='192'>
+      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
+      QPrnAKyqAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

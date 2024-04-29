@@ -1,0 +1,13 @@
+year, entry_type, entry_count(million), outcome_type, outcome_count(million)
+2023,stray,1.87,live,3.5
+2023,relinquished,0.948,non-live,0.401
+2023,other,0.382,adopted,2.2
+2022,stray,1.8,live,3.4
+2022,relinquished,0.948,non-live,0.323
+2022,other,0.352,adopted,2.1
+2021,stray,1.6,live,3.5
+2021,relinquished,0.938,non-live,0.244
+2021,other,0.362,adopted,2.1
+2020,stray,1.5,live,3.3
+2020,relinquished,0.849,non-live,0.213
+2020,other,0.251,adopted,2
